@@ -1,0 +1,49 @@
+{
+    "terminal.integrated.inheritEnv": false,
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "vscode-icons",
+    "thunder-client.codeSnippetLanguage": "python-requests",
+    "editor.tokenColorCustomizations": {
+        "comments": "#bbb9b9"
+        
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "cmake.configureOnOpen": true,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "dart.openDevTools": "flutter",
+    "vsicons.dontShowNewVersionMessage": true,
+    "git.suggestSmartCommit": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "githubIssues.queries": [
+        {
+            "label": "My Issues",
+            "query": "default"
+        },
+        {
+            "label": "Created Issues",
+            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+        },
+        {
+            "label": "Recent Issues",
+            "query": "state:open repo:${owner}/${repository} sort:updated-desc"
+        }
+    ],
+    "git.confirmSync": false,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "json.format.keepLines": true,
+    "editor.largeFileOptimizations": false,
+    "go.toolsManagement.autoUpdate": true
+}
