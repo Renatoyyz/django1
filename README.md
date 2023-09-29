@@ -34,3 +34,11 @@ Para criar as tabelas no banco de dados
 ```text
 python manage.py migrate
 ```
+
+Para criar usuário de admin (usuário e senha só para teste)
+
+```text
+python manage.py createsuperuser
+usuário: renato
+senha: renato123
+```
