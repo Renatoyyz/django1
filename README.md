@@ -42,3 +42,10 @@ python manage.py createsuperuser
 usuário: renato
 senha: renato123
 ```
+
+Definir os paths para os arquivos estáticos no arquivo settings.py:
+
+```text
+STATIC_URL = 'static/' # Usado no desenvolvimento
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # Usado na produção
+```
