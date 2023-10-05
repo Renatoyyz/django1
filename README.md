@@ -77,4 +77,8 @@ Para subir um projeto para web
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # Usado na produção
 
 6 - Criar o arquivo .gitignore para selecionar arquivos que não vão ser publicados
+
+7 - ir no site www.heroku.com
+
+
 ```
