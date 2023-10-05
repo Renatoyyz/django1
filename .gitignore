@@ -1,2 +1,6 @@
 /env/
 /django-env/
+*.*~
+__pycache__
+*.pyc
+*.idea

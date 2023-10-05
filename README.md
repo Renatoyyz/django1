@@ -49,3 +49,32 @@ Definir os paths para os arquivos estáticos no arquivo settings.py:
 STATIC_URL = 'static/' # Usado no desenvolvimento
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # Usado na produção
 ```
+
+Para redirecionar quando deslogar
+
+```text
+LOGIN_REDIRECT_URL = '/'
+```
+
+Para subir um projeto para web
+
+```text
+1 - Por o DEBUG = False no arquivo settings.py
+
+2 - No ALLOWED_HOSTS = ['*'] por o servidor onde vai rodar
+    se for em servidor gratuito para testes, deixar  ALLOWED_HOSTS = ['*'], se não por o dominio como:
+    ALLOWED_HOSTS = ['meudominio.com']
+
+3 - Instalar as libs:
+    pip install gunicorn whitenoise
+    whitenoise - para apresentar arquivos estáticos
+    gunicorn - servidor para rodar a aplicação em produção
+
+4 - No arquivo settings.py por 'whitenoise.middleware.WhiteNoiseMiddleware' aboixo de 'django.middleware.security.SecurityMiddleware',
+
+5 - Conferir as variáveis estáticas no arquivo settings.py:
+    STATIC_URL = 'static/' # Usado no desenvolvimento
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # Usado na produção
+
+6 - Criar o arquivo .gitignore para selecionar arquivos que não vão ser publicados
+```
