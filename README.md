@@ -88,4 +88,17 @@ Para subir um projeto para web
 10 - Criar o arquivo na raiz do projeto referente ao heroku - Procfile - com o conteúdo
     web: gunicorn <nome-projeto>.wsgi --log-file -
 
+11 - Atualizar o git - git add . - git commit -m "Comentáro" - git push origin <branch>
+
+12 - Logar o server heroku - heroku login - talvez tenha que reiniciar o prompt
+    Após executar o comando, no prompt tem que dar Logging in... done
+
+13 - Criar uma aplicação heroku - heroku create <aplicação> --buildpack heroku/python.
+    A aplicação não pode ser uma já existente
+    No final será exibido algo como:
+    https://django1-maeda-fc579e7628fe.herokuapp.com/ | https://git.heroku.com/django1-maeda.git
+
+14 - Executar o comando git - git push heroku master
+    Esse comando envia o código para o server
+
 ```
