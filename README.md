@@ -78,7 +78,14 @@ Para subir um projeto para web
 
 6 - Criar o arquivo .gitignore para selecionar arquivos que não vão ser publicados
 
-7 - ir no site www.heroku.com
+7 - ir no site da heroku devcenter.heroku.com para baixar o cliente de server do heroku
 
+8 - Criar um arquivo na raiz do projeto com o nome runtime.txt e por nesse arquivo
+    a - A versão do python (python-X.X.X)
+
+9 - Atualizar o requirements.txt com as libs do python - pip freeze > requirements.txt
+
+10 - Criar o arquivo na raiz do projeto referente ao heroku - Procfile - com o conteúdo
+    web: gunicorn <nome-projeto>.wsgi --log-file -
 
 ```
