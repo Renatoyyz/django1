@@ -98,7 +98,10 @@ Para subir um projeto para web
     No final será exibido algo como:
     https://django1-maeda-fc579e7628fe.herokuapp.com/ | https://git.heroku.com/django1-maeda.git
 
-14 - Executar o comando git - git push heroku master
+14 - Executar o comando git - git push heroku <branch>
     Esse comando envia o código para o server
+
+15 - Para saber as informações sobre o app rodando no heroku:
+    heroku apps:info
 
 ```
